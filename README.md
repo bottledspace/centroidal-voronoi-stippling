@@ -102,7 +102,7 @@ Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
 low density. This lack of global convergence may have been a secondary
 motivation for the author having a better initial distribution.  
 
-<img alt="Shoe Stippled" src="figures/shoe_stip.png?raw=true" width="500" />
+<img alt="Shoe Stippled" src="figures/shoe_stip.png?raw=true" width="250" />
 <img alt="Plant Stippled" src="figures/plant_stip.png?raw=true" width="500" />
 
 The size of the points relative to the image also seems to have a large
