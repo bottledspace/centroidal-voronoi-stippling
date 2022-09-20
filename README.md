@@ -1,3 +1,5 @@
+<img alt="Pine Marten Skull Pre and Post Stippling" src="figures/skull.webp?raw=true" width="500" />
+
 # Overview
 
 Stippling is the process of representing an image using a collection of
@@ -102,8 +104,8 @@ Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
 low density. This lack of global convergence may have been a secondary
 motivation for the author having a better initial distribution.  
 
-<img alt="Shoe Stippled" src="figures/shoe_stip.png?raw=true" width="250" />
-<img alt="Plant Stippled" src="figures/plant_stip.png?raw=true" width="500" />
+<img alt="Shoe Pre and Post Stippling" src="figures/shoe.webp?raw=true" width="250" />
+<img alt="Plant Pre and Post Stippling" src="figures/plant.webp?raw=true" width="500" />
 
 The size of the points relative to the image also seems to have a large
 effect upon the range of perceptual values possible. For the results
@@ -113,23 +115,6 @@ that there was overlap in the points and then reducing it to a
 reasonable level from there. Taking this size into account automatically
 in the density function would be an area of potential improvement for
 the method.
-
-The other parameter which greatly affected the outcome was the total
-number of points. Secord suggests that the results are most interesting
-in what he considers to be a middle range, and I agree with his
-assessment. The actual number also depends upon the size of the image.
-Besides its artistic merit, I was also encouraged by the slow
-computational speed to only pick as many points as I felt I needed in
-each case.
-
-I figured it prudent to try the method with a subject that one might
-find in a medical text, in this case a Marten skull, since the textbooks
-were a primary use case for stippling. I found that the method requires
-a certain amount of post processing in order to arrive at an image
-suitable for stippling. High contrast works best, with a white
-background.
-
-<img alt="Pine Marten Skull Stippled" src="figures/skull_stip.png?raw=true" width="500" />
 
 A final remark is that subtle gradients do not seem to preserve well
 when stippled, and a certain amount of perceptual flattening of the
