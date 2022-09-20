@@ -79,7 +79,7 @@ enabled for this so that the final value present at any given pixel is
 the closest to the view. Because of the construction of our scene this
 is also the ID of the closest site point.
 
-<img alt="Rendered Voronoi Diagram" src="figures/voronoi.webp?raw=true" />
+<img alt="Rendered Voronoi Diagram" src="figures/voronoi.png?raw=true" />
 
 The resulting framebuffer is then read back to the CPU for the
 computation of the integral. Each row is divided into intervals based on
