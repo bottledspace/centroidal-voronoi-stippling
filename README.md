@@ -102,6 +102,9 @@ Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
 low density. This lack of global convergence may have been a secondary
 motivation for the author having a better initial distribution.  
 
+<img alt="Shoe Stippled" src="figures/shoe_stip.png?raw=true" width="500" />
+<img alt="Plant Stippled" src="figures/plant_stip.png?raw=true" width="500" />
+
 The size of the points relative to the image also seems to have a large
 effect upon the range of perceptual values possible. For the results
 presented I attempted to choose a point size which would maximize this
@@ -126,8 +129,6 @@ a certain amount of post processing in order to arrive at an image
 suitable for stippling. High contrast works best, with a white
 background.
 
-<img alt="Pine Marten Skull Original" src="figures/skull_orig.jpg?raw=true" width="500" />
-<img alt="Pine Marten Skull Post Processed" src="figures/skull_post.png?raw=true" width="500" />
 <img alt="Pine Marten Skull Stippled" src="figures/skull_stip.png?raw=true" width="500" />
 
 A final remark is that subtle gradients do not seem to preserve well
