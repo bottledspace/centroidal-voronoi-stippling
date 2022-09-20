@@ -1,5 +1,8 @@
 <img alt="Pine Marten Skull Pre and Post Stippling" src="figures/skull.webp?raw=true" />
 
+*Left:* Pine Marten skull image taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Martes_foina_MHNT_ZOO_2010.9.2._Crane.jpg). Background was removed, converted to greyscale and contrast increased. 
+*Right:* is the stippled image using approximately 10000 points.
+
 # Overview
 
 Stippling is the process of representing an image using a collection of
@@ -101,8 +104,9 @@ rendered, as in the original paper.
 
 <img alt="Plant Pre and Post Stippling" src="figures/plant.webp?raw=true" />
 
-The figures above shows the results of an image from the original
-paper. While the results seem comparable in quality, there are subtle
+The figure above shows the results of an image from the original
+paper (obtained from [here](http://dahtah.github.io/imager/stippling.html)).
+While the results seem comparable in quality, there are subtle
 differences worth noting. One in particular can be observed in the
 Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
 low density. This lack of global convergence may have been a secondary
