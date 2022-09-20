@@ -10,9 +10,10 @@ small dots, similar to dithering but without the restriction that the
 points be placed on a grid. While stippling was originally borne out of
 the necessity for easier replication of textbook diagrams, the technique
 has artistic merit worth exploring for its own sake. In the paper
-‘Weighted Voronoi Stippling’ by Adrian Secord, a technique is
-presented for automatically stippling an image based upon a modification
-to Lloyd’s iterative algorithm for Centroidal Voronoi diagrams.
+[Weighted Voronoi Stippling](https://doi.org/10.1145/508530.508537)
+Adrian Secord presents a technique for automatically stippling an image
+based upon a modification to Lloyd’s iterative algorithm for Centroidal
+Voronoi diagrams.
 
 Voronoi diagrams are a partition of a metric space into regions for
 which a given *site point* (from a provided set of site points) is the
@@ -60,8 +61,8 @@ To begin, the image is scaled up using bilinear sampling with a supplied
 scaling factor to ensure that the corresponding Voronoi diagram will
 have a large enough resolution for accurate convergence. Then it is
 converted to a floating point image and inverted to form our density
-map. From this we obtain \(P\) by computing the cumulative sum in the X
-axis for each row, and from \(P\) we do the same to obtain \(Q\). Both
+map. From this we obtain `P` by computing the cumulative sum in the X
+axis for each row, and from `P` we do the same to obtain `Q`. Both
 of these are used in the formulation of the integral for centroid
 calculations.
 
@@ -84,8 +85,8 @@ is also the ID of the closest site point.
 The resulting framebuffer is then read back to the CPU for the
 computation of the integral. Each row is divided into intervals based on
 which regions of the Voronoi diagram they belong. We can now use the
-cumulative sum \(P\) of the density function for each row, and \(P\)’s
-cumulative sum \(Q\) to evaluate the integrals required for the
+cumulative sum `P` of the density function for each row, and `P`’s
+cumulative sum `Q` to evaluate the integrals required for the
 centroid.
 
 The process is now repeated using the centroids as the new site points
