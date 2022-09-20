@@ -126,9 +126,9 @@ a certain amount of post processing in order to arrive at an image
 suitable for stippling. High contrast works best, with a white
 background.
 
-![Pine Marten Skull Original](figures/skull_orig.jpg?raw=true)
-![Pine Marten Skull Post Processed](figures/skull_post.png?raw=true)
-![Pine Marten Skull Stippled](figures/skull_stip.png?raw=true)
+<img alt="Pine Marten Skull Original" src="figures/skull_orig.jpg?raw=true" width="100" />
+<img alt="Pine Marten Skull Post Processed" src="figures/skull_post.png?raw=true" width="100" />
+<img alt="Pine Marten Skull Stippled" src="figures/skull_stip.png?raw=true" width="100" />
 
 A final remark is that subtle gradients do not seem to preserve well
 when stippled, and a certain amount of perceptual flattening of the
