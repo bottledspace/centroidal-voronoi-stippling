@@ -71,10 +71,12 @@ To render a Voronoi diagram, a right cone (base extending out towards
 the far plane) is instanced for each site point. The site points are
 sent to the shader as a floating point texture which can then be indexed
 by instance ID. Each cone is rendered onto a framebuffer with a flat
-color corresponding to their ID (see Figure 1). Depth testing must be
+color corresponding to their ID (see figure below). Depth testing must be
 enabled for this so that the final value present at any given pixel is
 the closest to the view. Because of the construction of our scene this
 is also the ID of the closest site point.
+
+<img alt="Rendered Voronoi Diagram" src="figures/voronoi.webp?raw=true" />
 
 The resulting framebuffer is then read back to the CPU for the
 computation of the integral. Each row is divided into intervals based on
@@ -97,10 +99,9 @@ rendered, as in the original paper.
 
 # Results
 
-<img alt="Shoe Pre and Post Stippling" src="figures/shoe.webp?raw=true" />
 <img alt="Plant Pre and Post Stippling" src="figures/plant.webp?raw=true" />
 
-The figures above show the results of several images from the original
+The figures above shows the results of an image from the original
 paper. While the results seem comparable in quality, there are subtle
 differences worth noting. One in particular can be observed in the
 Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
@@ -115,6 +116,20 @@ that there was overlap in the points and then reducing it to a
 reasonable level from there. Taking this size into account automatically
 in the density function would be an area of potential improvement for
 the method.
+
+<img alt="Plot of Standard Deviation in Voronoi Areas" src="figures/stdev.png?raw=true" />
+
+The plot above shows the convergence of the standard deviation in Voronoi
+areas for the shoe image above. A logarithmic scale has been chosen to
+emphasize the the increasingly chaotic pattern in convergence. This was a
+particularly extreme example, however all images seemed to similarly
+fluctuate to some degree.
+
+The other parameter which greatly affects the outcome is the total
+number of points. Secord suggests that the results are most interesting
+in what he considers to be a middle range. The actual number also depends
+upon the size of the image. Besides its artistic merit, slow convergence
+may also encourage one to keep the number of points low.
 
 A final remark is that subtle gradients do not seem to preserve well
 when stippled, and a certain amount of perceptual flattening of the
