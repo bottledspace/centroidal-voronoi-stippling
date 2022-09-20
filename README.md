@@ -1,4 +1,4 @@
-<img alt="Pine Marten Skull Pre and Post Stippling" src="figures/skull.webp?raw=true" width="500" />
+<img alt="Pine Marten Skull Pre and Post Stippling" src="figures/skull.webp?raw=true" />
 
 # Overview
 
@@ -97,15 +97,15 @@ rendered, as in the original paper.
 
 # Results
 
-The figures below show the results of several images from the original
+<img alt="Shoe Pre and Post Stippling" src="figures/shoe.webp?raw=true" />
+<img alt="Plant Pre and Post Stippling" src="figures/plant.webp?raw=true" />
+
+The figures above show the results of several images from the original
 paper. While the results seem comparable in quality, there are subtle
 differences worth noting. One in particular can be observed in the
 Figure 3 from points becoming ’gridlocked’ when surrounded by areas of
 low density. This lack of global convergence may have been a secondary
 motivation for the author having a better initial distribution.  
-
-<img alt="Shoe Pre and Post Stippling" src="figures/shoe.webp?raw=true" width="250" />
-<img alt="Plant Pre and Post Stippling" src="figures/plant.webp?raw=true" width="500" />
 
 The size of the points relative to the image also seems to have a large
 effect upon the range of perceptual values possible. For the results
