@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/andrew/winter_2022/image-stylization/stippling/build",
+  "command": "/usr/bin/c++   -I/usr/lib/cmake/glm -I/usr/include/SDL2 -isystem /usr/include/opencv4  -g   -std=gnu++2a -o CMakeFiles/stippling.dir/stippling.cc.o -c /home/andrew/winter_2022/image-stylization/stippling/stippling.cc",
+  "file": "/home/andrew/winter_2022/image-stylization/stippling/stippling.cc"
+}
+]
